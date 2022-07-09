@@ -1,0 +1,26 @@
+
+body
+{
+ background-color: aquamarine;
+}
+/* Menu principal*/
+nav ul 
+{
+  list-style: none;
+  text-align: center;
+  padding: 2px;
+  font-size: 20px;
+}
+
+nav ul li 
+{
+	display: inline-block;
+	padding: 15px;
+}
+
+ul li a
+{
+	text-decoration: none;
+	color: rgb(13, 73, 70);	
+  
+} 
