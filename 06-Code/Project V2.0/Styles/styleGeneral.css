@@ -24,3 +24,16 @@ ul li a
 	color: rgb(13, 73, 70);	
   
 } 
+
+/* Parrafos*/
+
+table td {
+  
+  font-family:Segoe UI, sans-serif;
+  color: tomato;
+}
+
+p
+{
+  font-family:Segoe UI, sans-serif;
+}
