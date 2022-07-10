@@ -10,7 +10,7 @@ h1{
     background-color: rgb(235, 235, 172);
     padding: 30px;
     margin: auto;
-    margin-top: 35px;  /* arriba*/
+    margin-top: 15px;  /* arriba*/
     border-radius: 4px;
     font-family: 'calibri';
     color: black;
@@ -23,7 +23,7 @@ h1{
     background:  rgb(235, 235, 172);
     padding: 10px;
     margin-bottom: 7px;  /* arriba, derecha, abajo, izquierda */
-    border-radius: 16px;
+    border-radius: 10px;
     font-family: 'calibri';
     color: black;
     font-size: 18px;  
