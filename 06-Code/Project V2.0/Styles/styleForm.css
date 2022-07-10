@@ -1,6 +1,5 @@
 
-
-.form-register
+.form-login
 {
     width: 500px;
     background-color: rgb(235, 235, 172);
@@ -25,7 +24,7 @@
     font-size: 18px;  
 }
 
-.form-register .buttons
+.form-login .buttons
 {
     width: 100%;
     background: #73bed4;
@@ -37,7 +36,7 @@
 
 }
 
-.form-register a
+.form-login a
 {
     color:white;
     text-decoration: none;
