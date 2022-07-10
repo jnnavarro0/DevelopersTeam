@@ -110,7 +110,7 @@ table td
 {
   
   color: rgb(29, 121, 175);
-  font-family:"Constantia", serif;
+  font-family:"Segoe UI", sans-serif;
 }
 
 #main{
@@ -155,12 +155,8 @@ figure:before, figure:after {
 	margin: auto;
 }
 
-.table-contact td {
-	width: 30%;
-	color: black;
-}
-
-.table-contact td {
+.table-contact tr td {
+	font-family:"Constantia", serif;
 	width: 30%;
 }
 /*Produtos Principales*/
