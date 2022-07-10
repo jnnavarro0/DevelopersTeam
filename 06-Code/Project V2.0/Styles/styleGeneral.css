@@ -1,3 +1,9 @@
+body
+{
+   background-color: rgb(231, 231, 176);   
+}
+
+
 *{
 	margin: 0;
 	padding: 0;
@@ -53,6 +59,7 @@ header{
 
 .navegacion ul{
 	list-style: none;
+	text-align: center;
 }
 
 .menu > li{
