@@ -108,20 +108,22 @@ header{
 
 table td 
 {
-  
   color: rgb(29, 121, 175);
-  font-family:"Segoe UI", sans-serif;
+  font-family: "Arial", serif;
 }
 
 #main{
   background-color: white;
 }
 
-h1, h2, h3, p{
+h1, h2, h3
+{
   text-align: center;
-  font-family: Calibri, Helvetica, sans-serif;
+  color:rgb(255, 255, 255);
 }
-h3{
+
+h3
+{
 	color: green;
 }
 
@@ -155,7 +157,7 @@ figure:before, figure:after {
 	margin: auto;
 }
 
-.table-contact tr td {
+.table-contact td {
 	font-family:"Constantia", serif;
 	width: 30%;
 }
