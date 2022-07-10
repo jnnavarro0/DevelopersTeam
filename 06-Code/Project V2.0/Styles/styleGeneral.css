@@ -27,13 +27,10 @@ ul li a
 
 /* Parrafos*/
 
-table td {
+table td 
+{
   
-  font-family:Segoe UI, sans-serif;
-  color: tomato;
+  color: rgb(29, 121, 175);
+  font-family:"Constantia", serif;
 }
 
-p
-{
-  font-family:Segoe UI, sans-serif;
-}
