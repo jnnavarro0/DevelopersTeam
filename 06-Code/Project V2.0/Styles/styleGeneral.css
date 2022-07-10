@@ -168,13 +168,18 @@ figure:before, figure:after {
 	width: 80%;
 	margin: 0 auto;
   }
-  hr {
+  table hr {
 	height: 1px;
-	background-color: green;
+	width: 90%;
   }
   
   .image-product {
 	width: 120px;
 	height: 150px;
+  }
+
+  .line{
+	background: rgb(255, 0, 0);
+	 width:10%;
   }
   
