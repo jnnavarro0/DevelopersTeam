@@ -1,15 +1,9 @@
-<<<<<<< HEAD
 *{
 	margin: 0;
 	padding: 0;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-=======
-body
-{
- background-color: aquamarine;
->>>>>>> 69d1356b710a85384a53ccc68a6747b53ab5c4a9
 }
 
 
@@ -33,7 +27,6 @@ ul li a
 {
 	text-decoration: none;
 	color: rgb(13, 73, 70);	
-<<<<<<< HEAD
   
 } 
 
@@ -108,18 +101,10 @@ header{
 table td 
 {
   
-=======
-} 
-
-/* Parrafos*/
-table td 
-{
->>>>>>> 69d1356b710a85384a53ccc68a6747b53ab5c4a9
   color: rgb(29, 121, 175);
   font-family:"Constantia", serif;
 }
 
-<<<<<<< HEAD
 #main{
   background-color: white;
 }
@@ -159,5 +144,3 @@ figure:before, figure:after {
 	width: 80%;
 	height: auto;
 }
-=======
->>>>>>> 69d1356b710a85384a53ccc68a6747b53ab5c4a9
