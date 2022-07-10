@@ -80,6 +80,11 @@ header{
 	transition: all .3s;
 }
 
+article {
+	position: relative;
+	transform: translateY(-35%);
+}
+
 /* Submenu*/
 
 .submenu{
