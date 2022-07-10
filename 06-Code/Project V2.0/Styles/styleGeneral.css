@@ -142,6 +142,20 @@ figure:before, figure:after {
   padding: 0;
 }
 
+.table-contact {
+	width: 90%;
+	text-align: center;
+	margin: auto;
+}
+
+.table-contact td {
+	width: 30%;
+	color: black;
+}
+
+.table-contact td {
+	width: 30%;
+}
 /*Produtos Principales*/
 
 .table{
