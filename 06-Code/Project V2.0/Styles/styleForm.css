@@ -1,32 +1,45 @@
 button{
-    background-color: #4CAF50;
-    width: 100%;
-    color: orange;
-    padding: 15px;
-    margin: 10px 0px;
+    width: 50%;
+    background: #1f53c5;
     border: none;
-    cursor: pointer;
+    padding: 14px;
+    color:white;
+    margin: 16px 0;
+    font: size 16px;
 }
 form{
     border: 3px solid#f1f1f2;
 }
-input[type=text], input[ type=password]{
-    width: 100%;
-    margin: 8px 0;
-    padding: 12px 20px;
-    display: inline-block;
-    border: 2px solid green;
-    box-sizing: border-box;
-}
 button:hover{
     opacity: 0.7;
 }
-.cancelbtn {
+.Registrarsebtn {
+    justify-content: center;
     width: auto;
-    padding: 10px 18px;
+    padding: 15px ;
     margin: 10px 5px;
 }
 .container {
     padding: 25px;
     background-color: lightblue;
 }
+.form-register .buttons {
+    width: 100%;
+    background: #1f53c5;
+    border: none;
+    padding: 14px;
+    color:white;
+    margin: 16px 0;
+    font: size 16px;
+}
+.controls {
+    width: 100%;
+    background: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+}   
