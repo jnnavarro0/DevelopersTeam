@@ -1,44 +1,47 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> Create Account </title>
-        <link href="../Styles/styleGeneral.css" rel="stylesheet" type="text/css">
-    </head>
-    <body>
-        <div>
-            <article>
-                <h2>_</h2>
-                <header>
-                    <nav class="navegacion">    
-                        <ul class="menu">
-                            <li><a class="logo" href="../index.html"><img src="../img/logo.png" width="150" height="40" alt="Logo"></a></li>
-                            <li><a href="../index.html">INICIO</a></li>
-                            <li><a href="../Html/nosotros.html">NOSOTROS</a></li>
-                            <li><a href="#">CATEGORIAS</a>
-                                <ul class="submenu">
-                                    <li><a href="../Html/EscrituraYCuadernos.html">Escritura y Cuadernos</a></li>
-                                    <li><a href="../Html/detallesyRegalos.html">Detalles y Regalos</a></li>
-                                    <li><a href="../Html/OficinaYCarpetas.html">Oficina y Carpetas</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="../Html/contactos.html">CONTACTOS</a></li>
-                            <li><a href="../Html/login.html">INGRESAR</a></li>
-                        </ul>    
-                    </nav>
-                </header>
-            </article>
-        </div>
-    
-        <br /><br /><br /><br />
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Create Account </title>
+    <link href="../Styles/styleGeneral.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navegacion">
+            <ul class="menu">
+                <li><a class="logo" href="../index.html"><img src="../img/logo.png" width="150" height="40"
+                            alt="Logo"></a></li>
+                <li><a href="../index.html">INICIO</a></li>
+                <li><a href="../Html/nosotros.html">NOSOTROS</a></li>
+                <li><a href="#">CATEGORIAS</a>
+                    <ul class="submenu">
+                        <li><a href="../Html/EscrituraYCuadernos.html">Escritura y Cuadernos</a></li>
+                        <li><a href="../Html/detallesyRegalos.html">Detalles y Regalos</a></li>
+                        <li><a href="../Html/OficinaYCarpetas.html">Oficina y Carpetas</a></li>
+                    </ul>
+                </li>
+                <li><a href="../Html/contactos.html">CONTACTOS</a></li>
+                <li><a href="../Html/login.html">INGRESAR</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <br /><br /><br /><br />
 
 
 
-        <center> <h1> Crea una cuenta con ORFITA </h1> </center>
-        <form>
-            <center> <table width="400"  style="background-color: #e7f5f4;">
+    <center>
+        <h1> Crea una cuenta con ORFITA </h1>
+    </center>
+    <form>
+        <center>
+            <table width="400" style="background-color: #e7f5f4;">
 
                 <tr>
                     <td> <br><label for="textName"> Nombre: </label> </td>
@@ -62,32 +65,41 @@
                 </tr>
                 <tr>
                     <td> <label for="birthday"> Fecha de nacimiento: </label> </td>
-                    <td> 
-                        <input type="date" id="birthday" name="birthday"
-                        value="2002-02-10"
-                        min="1980-01-01" max="2022-12-31"> 
+                    <td>
+                        <input type="date" id="birthday" name="birthday" value="2002-02-10" min="1980-01-01"
+                            max="2022-12-31">
                     </td>
                 </tr>
                 <tr>
-                    <td> <label for="selecGender"> Sexo: </label>  </td>
+                    <td> <label for="selecGender"> Sexo: </label> </td>
                     <td>
                         <input type="radio" id="male" name="selecGender" value="Male">
-                        <label for="male"> Masculino </label> 
+                        <label for="male"> Masculino </label>
                         &nbsp;&nbsp;&nbsp;&nbsp;
-                        <input type="radio" id="female" name="selecGender" value="Female"> 
+                        <input type="radio" id="female" name="selecGender" value="Female">
                         <label for="femele"> Femenino </label>
                     </td>
                 </tr>
                 <tbody>
-                <tr> 
-                    <td colspan="2"><br> <p> <center> Al hacer clic en Registrar, aceptas las Condiciones, <br> la Política de datos y la Política de cookies.  <br>
-                        Es posible que te enviemos notificaciones por SMS <br> que podrás desactivar cuando quieras. </center> </p>  </td>
-                </tr>
+                    <tr>
+                        <td colspan="2"><br>
+                            <p>
+                                <center> Al hacer clic en Registrar, aceptas las Condiciones, <br> la Política de datos
+                                    y la Política de cookies. <br>
+                                    Es posible que te enviemos notificaciones por SMS <br> que podrás desactivar cuando
+                                    quieras. </center>
+                            </p>
+                        </td>
+                    </tr>
                 </tbody>
                 <tr>
-                    <td colspan="2"><br><center> <button> <a href="login.html"> Registrar </a> </button> </center></td>
+                    <td colspan="2"><br>
+                        <center> <button> <a href="login.html"> Registrar </a> </button> </center>
+                    </td>
                 </tr>
-            </table> </center>
-        </form>
-    </body>
+            </table>
+        </center>
+    </form>
+</body>
+
 </html>
