@@ -109,9 +109,12 @@ table td
   background-color: white;
 }
 
-h1, h2, p{
+h1, h2, h3, p{
   text-align: center;
   font-family: Calibri, Helvetica, sans-serif;
+}
+h3{
+	color: green;
 }
 
 p{
@@ -144,3 +147,19 @@ figure:before, figure:after {
 	width: 80%;
 	height: auto;
 }
+
+.table-office {
+	text-align: center;
+	width: 80%;
+	margin: 0 auto;
+  }
+  hr {
+	height: 1px;
+	background-color: green;
+  }
+  
+  .image-product {
+	width: 120px;
+	height: 150px;
+  }
+  
