@@ -1,8 +1,13 @@
-
-body
-{
- background-color: aquamarine;
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
+
+
+
 /* Menu principal*/
 nav ul 
 {
@@ -24,3 +29,118 @@ ul li a
 	color: rgb(13, 73, 70);	
   
 } 
+
+
+.portada{
+	width: 100%;
+	height: auto;
+}
+
+
+
+header{
+  font-family: Helvetica;
+  width: 100%;
+  margin: 0 auto;
+  background-color: rgb(255, 255, 255);
+}
+
+
+.navegacion{
+	background:b;
+}
+
+.navegacion ul{
+	list-style: none;
+}
+
+.menu > li{
+	position: relative;
+	display: inline-block;
+}
+
+.menu > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: #353535;
+	font-family: 'Open sans';
+	text-decoration: none;
+}
+
+.menu li a:hover{
+	color: #CE7D35;
+	transition: all .3s;
+}
+
+/* Submenu*/
+
+.submenu{
+	position: absolute;
+	background: #333333;
+	width: 120%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1.5s;
+}
+
+.submenu li a{
+	display: block;
+	padding: 15px;
+	color: #fff;
+	font-family: 'Open sans';
+	text-decoration: none;
+}
+
+.menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}
+
+/* Parrafos*/
+
+table td 
+{
+  
+  color: rgb(29, 121, 175);
+  font-family:"Constantia", serif;
+}
+
+#main{
+  background-color: white;
+}
+
+h1, h2, p{
+  text-align: center;
+  font-family: Calibri, Helvetica, sans-serif;
+}
+
+p{
+  text-align: justify;
+}
+
+figure {
+  position: relative;
+  text-align: center;
+}
+ 
+figure:before, figure:after {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+ 
+#image-store {
+  width: 40%;
+  height: 40%;
+  margin: 0;
+  padding: 0;
+}
+
+/*Produtos Principales*/
+
+.table{
+	width: 80%;
+	height: auto;
+}
