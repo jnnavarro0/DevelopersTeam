@@ -1,4 +1,3 @@
-
 body
 {
  background-color: aquamarine;
@@ -34,3 +33,35 @@ table td
   font-family:"Constantia", serif;
 }
 
+#main{
+  background-color: white;
+}
+
+h1, h2, p{
+  text-align: center;
+  font-family: Calibri, Helvetica, sans-serif;
+}
+
+p{
+  text-align: justify;
+}
+
+figure {
+  position: relative;
+  text-align: center;
+}
+ 
+figure:before, figure:after {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+ 
+#image-store {
+  width: 40%;
+  height: 40%;
+  margin: 0;
+  padding: 0;
+}
