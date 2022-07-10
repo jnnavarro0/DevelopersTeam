@@ -53,6 +53,7 @@ header{
 
 .navegacion ul{
 	list-style: none;
+	text-align: center;
 }
 
 .menu > li{
