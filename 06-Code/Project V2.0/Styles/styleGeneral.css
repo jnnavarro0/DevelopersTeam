@@ -151,10 +151,25 @@ figure:before, figure:after {
   padding: 0;
 }
 
+.contac {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.infor {
+	padding: 10px;
+	line-height: 30px;
+	margin: 0 auto;
+}
+
+table {
+	margin: 0 auto;
+}
+
 .table-contact {
 	width: 90%;
 	text-align: center;
-	margin: auto;
+	margin: 0 auto;
 }
 
 .table-contact td {
