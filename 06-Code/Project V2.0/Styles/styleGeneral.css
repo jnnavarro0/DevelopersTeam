@@ -104,6 +104,13 @@ header{
 	opacity: 1;
 }
 
+
+.menu li:hover{
+	color: #ffffff;
+	transition: all .3s;
+	background-color: #ffffff;
+}
+
 /* Parrafos*/
 
 table td 
