@@ -2,11 +2,12 @@
 h1{
     font-family:Arial, Helvetica, sans-serif;
     color:midnightblue;
+    text-align: center;
 
 }
 .form-login
 {
-    width: 400px;
+    width: 430px;
     background-color: rgb(235, 235, 172);
     padding: 30px;
     margin: auto;
