@@ -33,25 +33,14 @@
     <br>
     <h1>Registro productos</h1>
     <form class="form-login">
-        <label for="nombre">Nombre del juguete:</label>
+        <label for="nombre">Nombre del producto:</label>
         <input class="controls" type="text" name="nombre" id="name" onBlur="return validateName()" placeholder="Ingrese su nombre">
-        <label for="categoria">Categoria:</label>
-        <select class="controls" name="categoria">
-            <option>Seleccione</option>
-            <option>Peluches</option>
-            <option>Rompecabezas</option>
-            <option>Autos</option>
-            <option>Robots</option>
-            <option>Muñecas</option>
-        </select>
         <label for="cantidad">Cantidad:</label>
-        <input class="controls" type="text" name="cantidad" placeholder="Ingrese la cantidad">
+        <input class="controls" type="text" name="numbers" id="numbers" onBlur="return validateNumbers()" placeholder="Ingrese la cantidad">
         <label for="precio">Precio:</label>
         <input class="controls" type="text" name="precio" placeholder="Ingrese el precio">
         <label for="fechaIngreso">Fecha de ingreso:<label>
         <input class="controls" type="date" name="fechaIngreso">
-        <label for="horaIngreso">Hora de ingreso:<label>
-        <input class="controls" type="time" name="horaIngreso">
         <label for="descripcion">Descripción:<label>
        <textarea class="controls" placeholder="Ingrese la descripción, Opcional"></textarea>
        <button class="buttons" id="login" type="submit">Guardar</button>

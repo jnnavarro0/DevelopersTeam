@@ -13,3 +13,18 @@ function validateName()
         return true;
     }
 }
+
+function validateNumbers()
+{
+    var expRegNumbers= /^[1-9]+$/; 
+    var numbers = document.getElementById("numbers");
+    if (!expRegNumbers.exec(numbers.value))
+    {
+        alert("Se acepta solo numeros");
+        return false;
+
+    }else 
+    {
+        return true;
+    }
+}
