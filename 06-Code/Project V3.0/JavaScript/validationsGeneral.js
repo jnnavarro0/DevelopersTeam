@@ -28,3 +28,19 @@ function validateNumbers()
         return true;
     }
 }
+
+function validatePrices()
+{
+    var expRegPrices= /^-?[0-9][0-9,\.]+$/;
+    var prices= document.getElementById("prices");
+    if(!expRegPrices.exec(prices.value))
+    {
+        alert("Solo se acepta numeros");
+        return false;
+    }
+    else
+    {
+        return true;
+    }
+
+}
