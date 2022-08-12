@@ -35,12 +35,10 @@ ul li a
   
 } 
 
-
 .portada{
 	width: 100%;
 	height: auto;
 }
-
 
 header{
   font-family: Helvetica;
@@ -49,7 +47,6 @@ header{
   background-color: rgb(255, 255, 255);
   box-shadow: 2px 2px 5px #999;
 }
-
 
 .navegacion{
 	background-color: beige;
@@ -123,7 +120,7 @@ table td
   background-color: white;
 }
 
-h1, h2, h3
+h1, h2
 {
   text-align: center;
   color:palevioletred;
@@ -213,3 +210,107 @@ table {
 	 height: 5px;
   }
   
+  /* Comenarios */
+
+.image-comment picture img {
+	position: fixed;
+	right: 5px;
+	bottom: 5px;
+	height: 4rem;
+}
+
+.close-window img {
+	width: 25px;
+	position: fixed;
+	right: 23px;
+	bottom: 408px;
+}
+
+.form-comment {
+	width: 25%;
+	background-color: rgb(230, 230, 134);
+	padding: 10px;
+	right: 5px;
+	bottom: 80px;
+	position: fixed;
+	border-radius: 20px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: black;
+	display: none;
+}
+
+.title-comment{
+	font-family: Helvetica;
+	font-size: 20px;
+	text-align: left;
+	color: rgb(131, 35, 134);
+	margin: 0 auto;
+}
+
+.comment-goal {
+	width: 55%;
+	padding: 10px;
+	right: 5px;
+	bottom: 80px;
+	display: inline-block;
+	margin: 0 auto;
+}
+
+.container {
+	text-align: center;
+	padding: 10px;
+	margin: 0 auto;
+}
+
+.container-left{
+	float: left;
+	margin: 0 auto;
+}
+                              
+.comment-center{
+	display: inline-block
+}                        
+
+.comment-righ {
+	float: right;
+}
+
+.botton-comment {
+	padding: 5px;
+	margin: 0 auto;
+}
+
+.select-reason {
+	text-align: center;
+	padding: 8px;
+}
+
+.select-reason select{
+	background-color: #bfca82;
+	height: 25px;
+	margin: auto;
+	/* text-align: center; */
+}
+
+.text-suggestion {
+	text-align: center;
+	margin: 0% auto;
+}
+
+.text-suggestion textarea {
+	background-color: #dbcbbd;
+	padding: 6px;
+	margin: auto;
+}
+
+.button-save button {
+	padding: 10px;
+    margin: 10px auto;
+    width: 100%;
+    font-size: 15px;
+    background-color: #eba773;
+	border-color: #f0f35488;
+    border-radius: 45px;
+    cursor: pointer;
+}
