@@ -307,8 +307,8 @@ table {
     margin: 10px auto;
     width: 100%;
     font-size: 15px;
-    background-color: #eba773;
-	border-color: #f0f35488;
+    background-color:rgb(161, 173, 108);
+	border-color:rgb(161, 173, 108);
     border-radius: 45px;
     cursor: pointer;
 }
