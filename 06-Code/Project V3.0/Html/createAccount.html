@@ -92,13 +92,13 @@
     <form class="containerF">
         <div class="form-register">
             <div class="form-rows">
-                Cédula:<br /><input class="controls" type="text" name="Cedula" id="Cedula"
-                    placeholder="Ingrese su Cédula">
+                Cédula:<br /><input class="controls" type="text" name="id" id="id" placeholder="Ingrese su Cédula sin"
+                    onBlur="return validateid()">
 
-                <br />Nombre:<br /><input class="controls" type="text" name="Nombre" id="Nombre"
-                    placeholder="Ingrese su Nombre">
+                <br />Nombre:<br /><input class="controls" type="text" name="nameR" id="nameR"
+                    placeholder="Ingrese su Nombre" onBlur="return validateNamePerson()">
 
-                <br />Dirección:<br /><textarea class="controls" type="text" name="Direccion" id="Direccion"
+                <br />Dirección:<br /><textarea class="controls" type="text" name="address" id="address"
                     placeholder="Ingrese su Dirección"></textarea>
 
                 <br />Genero: <br /><label>
@@ -114,8 +114,8 @@
             <div class="form-rows">
                 <br />Fecha de Nacimiento: <br /><input class="controls" type="date" name="date" id="date">
 
-                <br />Apellido: <br /><input class="controls" type="text" name="Apellido" id="Apellido"
-                    placeholder="Ingrese su Apellido">
+                <br />Apellido: <br /><input class="controls" type="text" name="nameR" id="nameR"
+                    placeholder="Ingrese su Apellido" onBlur="return validateNamePerson()">
 
                 <br />Correo electrónico: <br /><input class="controls" type="email" name="email" id="email"
                     placeholder="Ingrese su correo electronico">
@@ -126,7 +126,7 @@
             </div>
         </div>
         <br />
-        <button class="buttons" id="login" type="submit" value="Save">Registrarse</a></button>
+        <button class="buttons" id="login" type="submit">Registrarse</a></button>
     </form>
 </body>
 
