@@ -64,7 +64,12 @@ h1{
 }
 
 .form-rows textarea {
-    height: 80px;
+    height: 76px;
+    resize: none;
+}
+
+.form-rows label {
+    margin: 20px;
 }
 
 .form-login .buttons {
