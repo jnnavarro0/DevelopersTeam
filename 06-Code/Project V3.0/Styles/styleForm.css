@@ -33,11 +33,11 @@ h1{
     align-items: flex-end;
 }
 
-.container button {
+.containerF button {
     width: 36%;
 }
 
-.container {
+.containerF {
     width: 700px;
     background-color: rgb(235, 235, 172);
     padding: 30px;
