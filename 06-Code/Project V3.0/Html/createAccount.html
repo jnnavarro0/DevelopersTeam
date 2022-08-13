@@ -17,8 +17,7 @@
     <header>
         <nav class="navegacion">
             <ul class="menu">
-                <a class="logo" href="../index.html"><img src="../img/logo.png" width="150" height="40"
-                            alt="Logo"></a>
+                <a class="logo" href="../index.html"><img src="../img/logo.png" width="150" height="40" alt="Logo"></a>
                 <li><a href="../index.html">INICIO</a></li>
                 <li><a href="../Html/nosotros.html">NOSOTROS</a></li>
                 <li><a href="#">CATEGORIAS</a>
@@ -46,40 +45,41 @@
             <h2 class="title-comment">¡Envíenos sus comentarios!</h3>
         </div> <br>
         <div class="close-window" id="close-window">
-            <a href="javascript:close()"><img src="../img/cerrar-ventana.png" alt="cerrar formulario de comentarios"></a>
+            <a href="javascript:close()"><img src="../img/cerrar-ventana.png"
+                    alt="cerrar formulario de comentarios"></a>
         </div>
         <form>
-            ¿Conseguiste tu objetivo? 
+            ¿Conseguiste tu objetivo?
             <div class="container">
-                    <div class="container-left">
-                        <input type="radio" name="goal" value="si"> Sí
-                    </div>
-                    <div class="comment-center">
-                        <input type="radio" name="goal" value="parcialmente"> Parcialmente
-                    </div>
-                    <div class="comment-righ">
-                        <input type="radio" name="goal" value="no"> No
-                    </div>
+                <div class="container-left">
+                    <input type="radio" name="goal" value="si"> Sí
+                </div>
+                <div class="comment-center">
+                    <input type="radio" name="goal" value="parcialmente"> Parcialmente
+                </div>
+                <div class="comment-righ">
+                    <input type="radio" name="goal" value="no"> No
+                </div>
             </div>
-            
+
             ¿Cuál fue el motivo de su visita?
             <div class="select-reason">
-                    <select name="reason">
-                        <option value="None">--- Seleccionar ---</option>
-                        <option value="porque un amigo me recomendo el sitio">Porque un amigo me recomendó el sitio</option>
-                        <option value="para comprar algo">Para comprar algo</option>
-                        <option value="mirar listas de precios">Mirar listas de precios</option>
-                        <option value="otra">Otra</option>
-                        
-                    </select>
-            </div> 
-            
+                <select name="reason">
+                    <option value="None">--- Seleccionar ---</option>
+                    <option value="porque un amigo me recomendo el sitio">Porque un amigo me recomendó el sitio</option>
+                    <option value="para comprar algo">Para comprar algo</option>
+                    <option value="mirar listas de precios">Mirar listas de precios</option>
+                    <option value="otra">Otra</option>
+
+                </select>
+            </div>
+
             ¿Tiene alguna sugerencia para mejorar el sitio web?
             <div class="text-suggestion">
-                    <textarea name="suggestion" id="suggestion" cols="38" rows="5" placeholder="Escriba aquí"></textarea>
+                <textarea name="suggestion" id="suggestion" cols="38" rows="5" placeholder="Escriba aquí"></textarea>
             </div>
             <div class="button-save">
-                    <button type="submit">Enviar</button> 
+                <button type="submit">Enviar</button>
             </div>
         </form>
     </div>
@@ -87,21 +87,43 @@
     <center>
         <h1> Crea una cuenta con ORFITA </h1>
     </center>
-    <form>
-        <div class="form-login">
-            Nombre: <input class="controls" type="text" name="Nombre" id="Nombre" placeholder="Ingrese su Nombre">
-            Apellido: <input class="controls" type="text" name="Apellido" id="Apellido"
-                placeholder="Ingrese su Apellido">
-            Correo electronico: <input class="controls" type="email" name="email" id="email" placeholder="Ingrese su correo electronico">
-            Contraseña: <input class="controls" type="password" name="password" id="password" placeholder="Ingrese su contraseña">
-            Genero:  <label>
-                <input type="radio" name="gender" value="opción" id="Mujer">
-                Mujer</label></td>
+    <form class="container">
+        <div class="form-register">
+            <div class="form-rows">
+                Cédula:<br /><input class="controls" type="text" name="Cedula" id="Cedula"
+                    placeholder="Ingrese su Cédula">
+
+                <br />Nombre:<br /><input class="controls" type="text" name="Nombre" id="Nombre"
+                    placeholder="Ingrese su Nombre">
+
+                <br />Correo electrónico: <br /><input class="controls" type="email" name="email" id="email"
+                    placeholder="Ingrese su correo electronico">
+
+                <br />Fecha de Nacimiento: <br /><input class="controls" type="date" name="date" id="date">
+
+            </div>
+            <div class="form-rows">
+                Apellido: <br /><input class="controls" type="text" name="Apellido" id="Apellido"
+                    placeholder="Ingrese su Apellido">
+
+                <br />Contraseña: <br /><input class="controls" type="password" name="password" id="password"
+                    placeholder="Ingrese su contraseña">
+
+                <br />Dirección:<br /><textarea class="controls" type="text" name="Direccion" id="Direccion"
+                    placeholder="Ingrese su Dirección"></textarea>
+
+                <br />Genero: <br /><label>
+                    <input type="radio" name="gender" value="opción" id="Mujer">
+
+                    Mujer</label></td>
                 <label>
-                <input type="radio" name="gender" value="opción" id="Hombre">
-                Hombre</label></td>
-            <button class="buttons"><a href="createAccount.html">Registrarse</a></button>
+                    <input type="radio" name="gender" value="opción" id="Hombre">
+                    Hombre</label></td>
+                    
+            </div>
         </div>
+        <br />
+        <button class="buttons" id="login" type="submit" value="Save">Registrarse</a></button>
     </form>
 </body>
 

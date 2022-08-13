@@ -1,41 +1,84 @@
-
-h1{
-    font-family:Arial, Helvetica, sans-serif;
-    color:midnightblue;
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: midnightblue;
 
 }
-.form-login
-{
+
+.form-login {
     width: 400px;
     background-color: rgb(235, 235, 172);
     padding: 30px;
     margin: auto;
-    margin-top: 15px;  /* arriba*/
+    margin-top: 15px;
+    /* arriba*/
     border-radius: 4px;
     font-family: 'calibri';
     color: black;
     box-shadow: 7px 13px 37px #000;
 }
 
-.form-login .buttons{
+.form-register {
+    display: flex;
+    align-items: flex-end;
+}
+
+.container button {
+    width: 36%;
+}
+
+.container {
+    width: 700px;
+    background-color: rgb(235, 235, 172);
+    padding: 30px;
+    margin: auto;
+    margin-top: 15px;
+    /* arriba*/
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: black;
+    box-shadow: 7px 13px 37px #000;
+}
+
+.form-register .controls {
+    width: 80%;
+    background: rgb(235, 235, 172);
+    padding: 10px;
+    margin-bottom: 7px;
+    /* arriba, derecha, abajo, izquierda */
+
+}
+
+.form-rows {
+    width: 150%;
+}
+
+.form-rows textarea {
+    height: 80px;
+}
+
+.form-login .buttons {
     text-align: center;
 }
 
-.controls
-{
+.controls {
     width: 100%;
-    background:  rgb(235, 235, 172);
+    background: rgb(235, 235, 172);
     padding: 10px;
-    margin-bottom: 7px;  /* arriba, derecha, abajo, izquierda */
+    margin-bottom: 7px;
+    /* arriba, derecha, abajo, izquierda */
     border-radius: 10px;
     font-family: 'calibri';
     color: black;
-    font-size: 18px;  
+    font-size: 18px;
 }
 
-.form-login a
-{
-    color:white;
+.form-login a {
+    color: white;
+    text-decoration: none;
+}
+
+.form-register a {
+    color: white;
     text-decoration: none;
 }
 
@@ -59,8 +102,8 @@ h1{
     transition: all 0.9s ease 0s;
     cursor: pointer;
     outline: none;
-  }
-  
+}
+
 .buttons:hover {
     background-color: #d48c8c;
     box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);

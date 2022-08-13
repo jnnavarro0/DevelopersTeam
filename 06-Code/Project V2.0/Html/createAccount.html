@@ -40,18 +40,18 @@
     </center>
     <form>
         <div class="form-login">
-            Nombre: <input class="controls" type="text" name="Nombre" id="Nombre" placeholder="Ingrese su Nombre">
+            Nombre: <input class="controls" type="text" name="Nombre" id="Nombre" placeholder="Ingrese su Nombre" required>
             Apellido: <input class="controls" type="text" name="Apellido" id="Apellido"
-                placeholder="Ingrese su Apellido">
-            Correo electronico: <input class="controls" type="email" name="email" id="email" placeholder="Ingrese su correo electronico">
-            Contraseña: <input class="controls" type="password" name="password" id="password" placeholder="Ingrese su contraseña">
+                placeholder="Ingrese su Apellido" required>
+            Correo electrónico: <input class="controls" type="email" name="email" id="email" placeholder="Ingrese su correo electronico" required>
+            Contraseña: <input class="controls" type="password" name="password" id="password" placeholder="Ingrese su contraseña" required>
             Genero:  <label>
-                <input type="radio" name="gender" value="opción" id="Mujer">
+                <input type="radio" name="gender" value="opción" id="Mujer" required>
                 Mujer</label></td>
                 <label>
-                <input type="radio" name="gender" value="opción" id="Hombre">
+                <input type="radio" name="gender" value="opción" id="Hombre" required>
                 Hombre</label></td>
-            <button class="buttons"><a href="createAccount.html">Registrarse</a></button>
+            <button class="buttons" id="register" type="submit" value="Save">Registrarse</button>
         </div>
     </form>
 </body>
