@@ -40,7 +40,7 @@ function validateid() {
     var expRegid = /^[1-9]{10}$/;
     var Personid = document.getElementById("id");
     if (!expRegid.exec(Personid.value)) {
-        alert("Se acepta solo numeros mmvdf");
+        alert("Formato incorrecto");
         return false;
 
     } else {
@@ -52,7 +52,19 @@ function validateNamePerson() {
     var expRegNamePerson = /^[a-zA-ZÑñÁáÉéÍíÓóÚúÜü\s][^[:space:]]+$/;
     var PersonName = document.getElementById("nameR");
     if (!expRegNamePerson.exec(PersonName.value)) {
-        alert("Se acepta solo letras");
+        prompt("mensaje personalizado", "valor por defecto");
+        return false;
+
+    } else {
+        return true;
+    }
+}
+
+function validateDatePerson() {
+    var expRegDatePerson = /^[0-31][0-12][1897-2022]+$/;
+    var DatePerson = document.getElementById("nameR");
+    if (!expRegDatePerson.exec(DatePerson.value)) {
+        alert("Formato incorrecto");
         return false;
 
     } else {
