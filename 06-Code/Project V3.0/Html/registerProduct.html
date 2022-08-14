@@ -95,7 +95,7 @@
         <label for="fechaIngreso">Fecha de ingreso:<label>
         <input class="controls" type="date" name="fechaIngreso">
         <label for="descripcion">Descripción:<label>
-       <textarea class="controls" placeholder="Ingrese la descripción, Opcional"></textarea>
+       <textarea class="controls" name="description" id="description" onBlur="return validateDescription()" placeholder="Ingrese la descripción, Opcional"></textarea>
        <button class="buttons" id="login" type="submit">Guardar</button>
     </form>
     

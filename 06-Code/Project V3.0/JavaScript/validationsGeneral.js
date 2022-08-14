@@ -36,6 +36,18 @@ function validatePrices() {
 
 }
 
+function validateDescription(){
+    var expRegDescription=/^[A-Za-z0-9\s]+$/;
+    var description= document.getElementById("description");
+    if (!expRegDescription.exec(description.value)){
+        alert("Solo se acepta letras y numeros");
+        return false;
+    }
+    else{
+        return true;
+    }
+}
+
 function validateid() {
     var expRegid = /^[1-9]{10}$/;
     var Personid = document.getElementById("id");
