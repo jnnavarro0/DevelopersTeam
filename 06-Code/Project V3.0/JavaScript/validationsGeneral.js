@@ -48,6 +48,19 @@ function validateDescription(){
     }
 }
 
+function validateDateProduct()
+{
+    var expRegDateProduct=/^[0-31][0-12][2022-2060]+$/;
+    var dateProduct=document.getElementById("dateProduct");
+    if(!expRegDateProduct.exec(dateProduct.value)){
+        alert("Se recepta productos a partir del 2022");
+        return false;
+    }
+    else{
+        return true;
+    }
+}
+
 function validateid() {
     var expRegid = /^[1-9]{10}$/;
     var Personid = document.getElementById("id");

@@ -93,11 +93,10 @@
         <label for="precio">Precio:</label>
         <input class="controls" type="text" name="prices" id="prices" onBlur="return validatePrices()" placeholder="Ingrese el precio">
         <label for="fechaIngreso">Fecha de ingreso:<label>
-        <input class="controls" type="date" name="fechaIngreso">
+        <input class="controls" type="date" name="dateProduct" id="dateProduct" onBlur="return validateDateProduct()">
         <label for="descripcion">Descripción:<label>
        <textarea class="controls" name="description" id="description" onBlur="return validateDescription()" placeholder="Ingrese la descripción, Opcional"></textarea>
        <button class="buttons" id="login" type="submit">Guardar</button>
     </form>
-    
 </body>
 </html>
