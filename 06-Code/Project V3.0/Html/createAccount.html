@@ -9,7 +9,7 @@
     <link href="../Styles/styleGeneral.css" rel="stylesheet" type="text/css">
     <link href="../Styles/styleForm.css" rel="stylesheet" type="text/css">
     <script src="../JavaScript/javaScript.js"> </script>
-    <script src="../JavaScript/validationsGeneral.js"></script>
+    <script src="../JavaScript/validationCreateAccount.js"></script>
     <link rel="icon" href="../img/icono.png">
 </head>
 
@@ -93,40 +93,42 @@
         <div class="form-register">
             <div class="form-rows">
                 Cédula:<br /><input class="controls" type="text" name="id" id="id" placeholder="Ingrese su Cédula sin"
-                    onBlur="return validateid()">
+                    onBlur="return validateid()" required>
 
                 <br />Nombre:<br /><input class="controls" type="text" name="nameR" id="nameR"
-                    placeholder="Ingrese su Nombre" onBlur="return validateNamePerson()">
+                    placeholder="Ingrese su Nombre" onBlur="return validateNamePerson()" required>
 
                 <br />Dirección:<br /><textarea class="controls" type="text" name="address" id="address"
-                    placeholder="Ingrese su Dirección"></textarea>
+                    placeholder="Ingrese su Dirección" ></textarea>
 
                 <br />Genero: <br /><label>
-                    <input type="radio" name="gender" value="opción" id="Mujer">
+                    <input type="radio" name="gender" value="opción" id="Mujer" required>
 
                     Mujer</label>
                 <label>
-                    <input type="radio" name="gender" value="opción" id="Hombre">
+                    <input type="radio" name="gender" value="opción" id="Hombre" required>
                     Hombre</label></td>
                 <br />
 
             </div>
             <div class="form-rows">
-                <br />Fecha de Nacimiento: <br /><input class="controls" type="date" name="date" id="date">
+                <br />Fecha de Nacimiento: <br /><input class="controls" type="date" 
+                name="datePerson" id="datePerson" onBlur="return validateDatePerson()" min="1897-01-01" max="2022-01-01" required>
 
                 <br />Apellido: <br /><input class="controls" type="text" name="nameR" id="nameR"
-                    placeholder="Ingrese su Apellido" onBlur="return validateNamePerson()">
+                    placeholder="Ingrese su Apellido" onBlur="return validateNamePerson()" required>
 
                 <br />Correo electrónico: <br /><input class="controls" type="email" name="email" id="email"
-                    placeholder="Ingrese su correo electronico">
+                    placeholder="Ingrese su correo electronico" required>
 
                 <br />Contraseña: <br /><input class="controls" type="password" name="password" id="password"
-                    placeholder="Ingrese su contraseña">
+                    placeholder="Ingrese su contraseña" required>
 
             </div>
         </div>
         <br />
-        <button class="buttons" id="login" type="submit">Registrarse</a></button>
+        <center><button class="buttons" id="login" type="submit">Registrarse</a></button>
+        <button class="buttons" id="login" type="reset">Limpiar</a></button></center>
     </form>
 </body>
 
