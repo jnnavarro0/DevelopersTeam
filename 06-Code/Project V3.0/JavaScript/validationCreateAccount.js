@@ -1,5 +1,5 @@
 function validateid() {
-    var expRegid = /^[1-9]{10}$/;
+    var expRegid = /^[[:space:]][1-9]{10}$/;
     var Personid = document.getElementById("id");
     if (!expRegid.exec(Personid.value)) {
         alert("Formato incorrecto");
@@ -11,14 +11,15 @@ function validateid() {
 }
 
 function validateNamePerson() {
-    var expRegNamePerson = /^[a-zA-ZÑñÁáÉéÍíÓóÚúÜü\s][^[:space:]]+$/;
+    var expRegNamePerson = /^[[:space:]][a-zA-ZÑñÁáÉéÍíÓóÚúÜü\s]+$/;
     var PersonName = document.getElementById("nameR");
     if (!expRegNamePerson.exec(PersonName.value)) {
-        alert("Solo se acepta letras");
+        alert("Solo se aceptan letras");
         return false;
 
     } else {
         return true;
     }
 }
+
 
