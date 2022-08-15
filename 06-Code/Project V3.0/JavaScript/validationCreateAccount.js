@@ -1,5 +1,5 @@
 function validateid() {
-    var expRegid = /^[[:space:]][1-9]{10}$/;
+    var expRegid = /^[1-9]{10}$/;
     var Personid = document.getElementById("id");
     if (!expRegid.exec(Personid.value)) {
         alert("Formato incorrecto");
@@ -11,7 +11,7 @@ function validateid() {
 }
 
 function validateNamePerson() {
-    var expRegNamePerson = /^[[:space:]][a-zA-ZÑñÁáÉéÍíÓóÚúÜü\s]+$/;
+    var expRegNamePerson = /^[a-zA-ZÑñÁáÉéÍíÓóÚúÜü\s]+$/;
     var PersonName = document.getElementById("nameR");
     if (!expRegNamePerson.exec(PersonName.value)) {
         alert("Solo se aceptan letras");
