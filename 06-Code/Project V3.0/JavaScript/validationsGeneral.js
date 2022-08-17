@@ -15,7 +15,7 @@ function validateNumbers() {
     var expRegNumbers = /^[1-9]+$/;
     var numbers = document.getElementById("numbers");
     if (!expRegNumbers.exec(numbers.value)) {
-        alert("Se acepta solo numeros");
+        alert("Se acepta solo números");
         return false;
 
     } else {
@@ -27,7 +27,7 @@ function validatePrices() {
     var expRegPrices = /^-?[0-9][0-9,\.]+$/;
     var prices = document.getElementById("prices");
     if (!expRegPrices.exec(prices.value)) {
-        alert("Solo se acepta numeros");
+        alert("Solo se acepta números");
         return false;
     }
     else {
@@ -40,7 +40,7 @@ function validateDescription(){
     var expRegDescription=/^[A-Za-z0-9\s]+$/;
     var description= document.getElementById("description");
     if (!expRegDescription.exec(description.value)){
-        alert("Solo se acepta letras y numeros");
+        alert("Solo se acepta letras y números");
         return false;
     }
     else{

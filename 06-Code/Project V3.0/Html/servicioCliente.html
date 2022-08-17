@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/styleGeneral.css" type="text/css">
+    <link rel="stylesheet" href="../Styles/styleForm.css" type="text/css">
+    <title>Servicio al cliente</title>
+    <link rel="icon" href="../img/icono.png">
+</head>
+<body>
+
+    <header>
+        <nav class="navegacion">
+              <ul class="menu">
+                    <a class="logo" href="../index.html"><img src="../img/logo.png" width="150" height="40"
+                                alt="Logo"></a>
+                    <li><a href="../index.html">INICIO</a></li>
+                    <li><a href="../Html/nosotros.html">NOSOTROS</a></li>
+                    <li><a href="#">CATEGORIAS</a>
+                          <ul class="submenu">
+                                <li><a href="../Html/EscrituraYCuadernos.html">Escritura y Cuadernos</a></li>
+                                <li><a href="../Html/detallesyRegalos.html">Detalles y Regalos</a></li>
+                                <li><a href="../Html/OficinaYCarpetas.html">Oficina y Carpetas</a></li>
+                          </ul>
+                    </li>
+                    <li><a href="../Html/contactos.html">CONTACTOS</a></li>
+                    <li><a href="#">CLIENTE</a>
+                          <ul class="submenu">
+                                <li><a href="../Html/servicioCliente.html">Servicio al cliente</a></li>
+                                <li><a href="../Html/productosASugerir.html">Productos a sugerir</a></li>
+                          </ul>
+                    </li>
+                    <li><a href="Html/login.html">INGRESAR</a></li>
+              </ul>
+        </nav>
+  </header>
+  <br>
+    <h1>Servicio al cliente</h1>
+    <br>
+    <form class="form-login">
+        <label for="asunto">Asunto:</label>
+        <input class="controls" type="text" name="affair" id="affair" onBlur="return validateName()" placeholder="Ingrese el asunto">
+        <label for="nombre">Nombre:</label>
+        <input class="controls" type="text" name="name" id="name" onBlur="return validateNumbers()" placeholder="Ingrese su nombre">
+        <label for="correoElectrónico">Correo electrónico</label>
+        <input class="controls" type="email" name="email" id="email" onBlur="return validatePrices()" placeholder="Ingrese su correo electrónico">
+        <label for="mensaje">Mensaje:<label>
+       <textarea class="controls" name="message" id="message" onBlur="return validateDescription()" placeholder="Ingrese el mensaje"></textarea>
+       <button class="buttons" id="login" type="submit">Guardar</button>
+    </form>
+    
+</body>
+</html>

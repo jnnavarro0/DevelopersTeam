@@ -24,10 +24,15 @@
                         <li><a href="../Html/EscrituraYCuadernos.html">Escritura y Cuadernos</a></li>
                         <li><a href="../Html/detallesyRegalos.html">Detalles y Regalos</a></li>
                         <li><a href="../Html/OficinaYCarpetas.html">Oficina y Carpetas</a></li>
-                        <li><a href="../Html/registerProduct.html">Registro productos</a></li>
                     </ul>
                 </li>
                 <li><a href="../Html/contactos.html">CONTACTOS</a></li>
+                <li><a href="#">CLIENTE</a>
+                    <ul class="submenu">
+                          <li><a href="../Html/servicioCliente.html">Servicio al cliente</a></li>
+                          <li><a href="../Html/productosASugerir.html">Productos a sugerir</a></li>
+                    </ul>
+              </li>
                 <li><a href="../Html/login.html">INGRESAR</a></li>
             </ul>
         </nav>
@@ -84,19 +89,5 @@
         </form>
     </div>
 
-    <h1>Registro productos</h1>
-    <form class="form-login">
-        <label for="nombre">Nombre del producto:</label>
-        <input class="controls" type="text" name="nombre" id="name" onBlur="return validateName()" placeholder="Ingrese su nombre">
-        <label for="cantidad">Cantidad:</label>
-        <input class="controls" type="text" name="numbers" id="numbers" onBlur="return validateNumbers()" placeholder="Ingrese la cantidad">
-        <label for="precio">Precio:</label>
-        <input class="controls" type="text" name="prices" id="prices" onBlur="return validatePrices()" placeholder="Ingrese el precio">
-        <label for="fechaIngreso">Fecha de ingreso:<label>
-        <input class="controls" type="date" name="dateProduct" id="dateProduct" onBlur="return validateDateProduct()">
-        <label for="descripcion">Descripción:<label>
-       <textarea class="controls" name="description" id="description" onBlur="return validateDescription()" placeholder="Ingrese la descripción, Opcional"></textarea>
-       <button class="buttons" id="login" type="submit">Guardar</button>
-    </form>
 </body>
 </html>
