@@ -18,6 +18,16 @@ function validateName() {
     } 
 }
 
+function validateLastName() {
+    var expRegLastName = /^[a-zA-ZÑñÁáÉéÍíÓóÚúÜü\s]+$/;
+    var lastName = document.getElementById("lastName");
+    if (!expRegLastName.exec(lastName.value)) {
+        alert("Se recibe solo letras");
+        document.getElementById("lastName").value = ""; // limpia el campo en caso se ingrese números
+       
+    } 
+}
+
 function validateNameClient(){
     var expRegNameClient = /^[a-zA-ZÑñÁáÉéÍíÓóÚúÜü\s]+$/;
     var nameClient= document.getElementById("nameClient");
