@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../Styles/styleGeneral.css" type="text/css">
     <link rel="stylesheet" href="../Styles/styleForm.css" type="text/css">
+    <script src="../JavaScript/validationsGeneral.js"></script>
     <title>Servicio al cliente</title>
     <link rel="icon" href="../img/icono.png">
 </head>
@@ -41,14 +42,14 @@
     <br>
     <form class="form-login">
         <label for="asunto">Asunto:</label>
-        <input class="controls" type="text" name="affair" id="affair" onBlur="return validateName()" placeholder="Ingrese el asunto">
+        <input class="controls" type="text" name="affair" id="affair" onchange="return validateAffair()" placeholder="Ingrese el asunto">
         <label for="nombre">Nombre:</label>
-        <input class="controls" type="text" name="name" id="name" onBlur="return validateNumbers()" placeholder="Ingrese su nombre">
+        <input class="controls" type="text" name="name" id="name" onchange="return validateName()" placeholder="Ingrese su nombre">
         <label for="correoElectrónico">Correo electrónico</label>
-        <input class="controls" type="email" name="email" id="email" onBlur="return validatePrices()" placeholder="Ingrese su correo electrónico">
+        <input class="controls" type="email" name="email" id="email" onchange="return validateEmail()" placeholder="Ingrese su correo electrónico">
         <label for="mensaje">Mensaje:<label>
-       <textarea class="controls" name="message" id="message" onBlur="return validateDescription()" placeholder="Ingrese el mensaje"></textarea>
-       <button class="buttons" id="login" type="submit">Guardar</button>
+       <textarea class="controls" name="message" id="message" onchange="return validateMessage()" placeholder="Ingrese el mensaje"></textarea>
+       <button class="buttons" id="login" type="submit">Enviar</button>
     </form>
     
 </body>

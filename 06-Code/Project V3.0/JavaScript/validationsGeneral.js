@@ -1,62 +1,54 @@
 
+function validateAffair(){                // Para validar el campo asunto
+  var expRegAffair= /^[a-zA-ZÑñÁáÉéÍíÓóÚúÜü\s]+$/;
+  var affair= document.getElementById("affair");
+  if(!expRegAffair.exec(affair.value)){
+    alert("Se recibe solo letras");
+    document.getElementById("affair").value=""; // limpia el campo en caso se ingrese números
+  }
+}
+
 function validateName() {
     var expRegName = /^[a-zA-ZÑñÁáÉéÍíÓóÚúÜü\s]+$/;
     var productName = document.getElementById("name");
     if (!expRegName.exec(productName.value)) {
-        alert("Se acepta solo letras");
-        return false;
+        alert("Se recibe solo letras");
+        document.getElementById("name").value = ""; // limpia el campo en caso se ingrese números
+       
+    } 
+}
 
-    } else {
-        return true;
+function validateNameClient(){
+    var expRegNameClient = /^[a-zA-ZÑñÁáÉéÍíÓóÚúÜü\s]+$/;
+    var nameClient= document.getElementById("nameClient");
+    if(!expRegNameClient.exec(nameClient.value)){
+        alert("Se recibe solo letras");
+        document.getElementById("nameClient").value=""; // limpia el campo en caso se ingrese números
     }
 }
 
-function validateNumbers() {
-    var expRegNumbers = /^[1-9]+$/;
-    var numbers = document.getElementById("numbers");
-    if (!expRegNumbers.exec(numbers.value)) {
-        alert("Se acepta solo números");
-        return false;
-
-    } else {
-        return true;
+function validateMessage(){
+    var expRegMessage=/^[A-Za-z0-9\s]+$/;
+    var message= document.getElementById("message");
+    if (!expRegMessage.exec(message.value)){
+        alert("Se recibe solo letras y números");
+        document.getElementById("message").value=""; // limpia el campo en caso no se ingrese letras o números
+    
     }
 }
 
-function validatePrices() {
-    var expRegPrices = /^-?[0-9][0-9,\.]+$/;
-    var prices = document.getElementById("prices");
-    if (!expRegPrices.exec(prices.value)) {
-        alert("Solo se acepta números");
-        return false;
-    }
-    else {
-        return true;
-    }
-
-}
-
-function validateDescription(){
-    var expRegDescription=/^[A-Za-z0-9\s]+$/;
-    var description= document.getElementById("description");
-    if (!expRegDescription.exec(description.value)){
-        alert("Solo se acepta letras y números");
-        return false;
-    }
-    else{
-        return true;
+function validateEmail(){
+    var expRegEmail= /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
+    var email= document.getElementById("email");
+    if(!expRegEmail.exec(email.value)){
+        alert("El correo ingresado no es valido");
+        document.getElementById("email"); // limpia el campo en el caso que el correo electrónico no sea valido
     }
 }
 
-function validateDateProduct()
-{
-    var expRegDateProduct=/^[0-31][0-12][2022-2060]+$/;
-    var dateProduct=document.getElementById("dateProduct");
-    if(!expRegDateProduct.exec(dateProduct.value)){
-        alert("Se recepta productos a partir del 2022");
-        return false;
-    }
-    else{
-        return true;
-    }
-}
+/*
+    Empezar por el identificador o nombre del usuario ^\w+([.-_+]?\w+)*
+    Seguido por el símbolo de la arroba @
+    Por último, el nombre del dominio del correo \w+([.-]?\w+)*(\.\w{2,10})+$
+*/
+
