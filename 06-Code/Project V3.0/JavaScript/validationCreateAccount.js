@@ -25,7 +25,7 @@ function validateDirection() {
     var expRegDirection = /^[a-zA-Z0-9\_\-\s]{1,50}$/;
     var PersonDirection = document.getElementById("address");
     if (!expRegDirection.exec(PersonDirection.value)) {
-        alert("No se aceptan menos de 4 dígitos");
+        alert("No se aceptan caracteres especiales");
         return false;
 
     } else {
