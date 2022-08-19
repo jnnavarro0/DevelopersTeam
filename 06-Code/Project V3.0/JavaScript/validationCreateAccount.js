@@ -33,7 +33,7 @@ function validateDirection() {
     }
 }
 function validateNamePassword() {
-    var expRegPassword = /^.{2,12}$/;
+    var expRegPassword = /^.{6,12}$/;
     var PersonPassword = document.getElementById("password");
     if (!expRegPassword.exec(PersonPassword.value)) {
         alert("La contraseña debe de tener de 6 a 12 dígitos");
