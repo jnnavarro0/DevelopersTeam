@@ -32,5 +32,16 @@ function validateDirection() {
         return true;
     }
 }
+function validateNamePassword() {
+    var expRegPassword = /^.{2,12}$/;
+    var PersonPassword = document.getElementById("password");
+    if (!expRegPassword.exec(PersonPassword.value)) {
+        alert("No se aceptan menos de 2 dígitos");
+        return false;
+
+    } else {
+        return true;
+    }
+}
 
 
