@@ -10,6 +10,7 @@
     <link href="../Styles/styleForm.css" rel="stylesheet" type="text/css">
     <link href="../Styles/styleGeneral.css" rel="stylesheet" type="text/css">
     <script src="../JavaScript/javaScript.js"> </script>
+    <script src="../JavaScript/login.js"></script>
     <script src="../JavaScript/validationsGeneral.js"></script>
 </head>
 
@@ -95,10 +96,10 @@
 
     <form>
         <div class="form-login">
-            Usuario: <input class="controls" type="text" name="user" id="user" placeholder="Ingrese su usuario">
+            Usuario: <input class="controls" type="text" name="username" id="username" placeholder="Ingrese su usuario">
             Contraseña: <input class="controls" type="password" name="password" id="password"
                 placeholder="Ingrese su contraseña">
-            <button class="buttons" type="submit" id="login">Ingresar</button>
+            <button onclick="getInfo()" class="buttons" type="submit" id="login">Ingresar</button>
             <button class="buttons"><a href="createAccount.html">Registrarse</a></button>
         </div>
     </form>
