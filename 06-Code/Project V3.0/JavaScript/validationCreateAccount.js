@@ -36,7 +36,7 @@ function validateNamePassword() {
     var expRegPassword = /^.{2,12}$/;
     var PersonPassword = document.getElementById("password");
     if (!expRegPassword.exec(PersonPassword.value)) {
-        alert("No se aceptan menos de 2 dígitos");
+        alert("La contraseña debe de tener de 6 a 12 dígitos");
         return false;
 
     } else {
