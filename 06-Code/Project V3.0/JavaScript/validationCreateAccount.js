@@ -35,6 +35,20 @@ function validateDirection() {
         return true;
     }
 }
+
+function validateLastName(){
+    var expRegNamePerson = /^[a-zA-ZÑñÁáÉéÍíÓóÚúÜü\s]+$/;
+    var PersonName = document.getElementById("lastName");
+    if (!expRegNamePerson.exec(PersonName.value)) {
+        alert("Solo se aceptan letras");
+        document.getElementById("lastName").value="";
+        return false;
+
+    } else {
+        return true;
+    }
+}
+
 function validateNamePassword() {
     var expRegPassword = /^.{6,12}$/;
     var PersonPassword = document.getElementById("password");
