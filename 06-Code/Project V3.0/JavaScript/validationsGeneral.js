@@ -52,7 +52,7 @@ function validateEmail(){
     var email= document.getElementById("email");
     if(!expRegEmail.exec(email.value)){
         alert("El correo ingresado no es valido");
-        document.getElementById("email"); // limpia el campo en el caso que el correo electrónico no sea valido
+        document.getElementById("email").value=""; // limpia el campo en el caso que el correo electrónico no sea valido
     }
 }
 
