@@ -98,13 +98,13 @@
         <div class="form-register">
             <div class="form-rows">
                 Cédula:<br /><input class="controls" type="text" name="id" id="id" placeholder="Ingrese su Cédula"
-                    onkeyup="return validateid()" >
+                    onblur="return validateid()" >
 
                 <br />Nombre:<br /><input class="controls" type="text" name="nameR" id="nameR"
-                    placeholder="Ingrese su Nombre" onkeyup="return validateNamePerson()" >
+                    placeholder="Ingrese su Nombre" onblur="return validateNamePerson()" >
 
                 <br />Dirección:<br /><textarea class="controls" type="text" name="address" id="address"
-                    placeholder="Ingrese su Dirección" onkeyup="return validateDirection()"></textarea>
+                    placeholder="Ingrese su Dirección" onblur="return validateDirection()"></textarea>
 
                 <br />Genero: <br /><label>
                     <input type="radio" name="gender" value="opción" id="Mujer" >
@@ -118,10 +118,10 @@
             </div>
             <div class="form-rows">
                 <br />Fecha de Nacimiento: <br /><input class="controls" type="date" name="datePerson" id="datePerson"
-                    onkeyup="return validateDatePerson()" min="1897-01-01" max="2022-01-01" >
+                    onblur="return validateDatePerson()" min="1897-01-01" max="2022-01-01" >
 
                 <br />Apellido: <br /><input class="controls" type="text" name="nameR" id="nameR"
-                    placeholder="Ingrese su Apellido" onkeyup="return validateNamePerson()" >
+                    placeholder="Ingrese su Apellido" onblur="return validateNamePerson()" >
 
                 <br />Correo electrónico: <br /><input class="controls" type="email" name="email" id="email"
                     placeholder="Ingrese su correo electronico" >
