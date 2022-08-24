@@ -1,5 +1,5 @@
 function validateid() {
-    var expRegid = /^[1-9]{10}$/;
+    var expRegid = /^[0-9]{10}$/;
     var Personid = document.getElementById("id");
     if (!expRegid.exec(Personid.value)) {
         alert("Formato incorrecto");
