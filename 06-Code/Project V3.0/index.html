@@ -10,6 +10,7 @@
       <link href="Styles/styleGeneral.css" rel="stylesheet" type="text/css">
       <link href="Styles/styleForm.css" rel="stylesheet" type="text/css">
       <script src="JavaScript/javaScript.js"> </script>
+      <script src="JavaScript/validationsGeneral.js"></script>
 </head>
 
 <body>
@@ -89,7 +90,7 @@
                   ¿Tiene alguna sugerencia para mejorar el sitio web?
                   <div class="text-suggestion">
                         <textarea name="suggestion" id="suggestion" cols="38" rows="5"
-                              placeholder="Escriba aquí"></textarea>
+                              placeholder="Escriba aquí" onchange="return validateSuggestion()"></textarea>
                   </div>
                   <div class="button-save">
                         <button type="submit">Enviar</button>

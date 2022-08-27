@@ -48,6 +48,16 @@ function validateMessage(){
     }
 }
 
+function validateSuggestion(){
+    var expRegSuggestion=/^[A-Za-z0-9\s]+$/;
+    var suggestion= document.getElementById("suggestion");
+    if (!expRegSuggestion.exec(suggestion.value)){
+        alert("La sugerencia solo puede recibir letras y números");
+        document.getElementById("suggestion").value=""; // limpia el campo en caso no se ingrese letras o números
+    
+    }
+}
+
 function validateEmail(){
     var expRegEmail= /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
     var email= document.getElementById("email");
