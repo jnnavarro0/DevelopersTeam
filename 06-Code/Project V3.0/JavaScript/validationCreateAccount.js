@@ -2,7 +2,7 @@ function validateid() {
     var expRegid = /^[0-9]{10}$/;
     var Personid = document.getElementById("id");
     if (!expRegid.exec(Personid.value)) {
-        alert("Formato incorrecto");
+        alert("La cedula ingresada es incorrecta");
         document.getElementById("id").value="";
         return false;
 
@@ -15,7 +15,7 @@ function validateNamePerson() {
     var expRegNamePerson = /^[a-zA-ZÑñÁáÉéÍíÓóÚúÜü\s]+$/;
     var PersonName = document.getElementById("nameR");
     if (!expRegNamePerson.exec(PersonName.value)) {
-        alert("Solo se aceptan letras");
+        alert("El nombre solo permite letras");
         document.getElementById("nameR").value="";
         return false;
 
@@ -27,7 +27,7 @@ function validateDirection() {
     var expRegDirection = /^[a-zA-Z0-9\_\-\s]{1,50}$/;
     var PersonDirection = document.getElementById("address");
     if (!expRegDirection.exec(PersonDirection.value)) {
-        alert("No se aceptan caracteres especiales");
+        alert("La dirección no admite caracteres especiales");
         document.getElementById("address").value="";
         return false;
 
@@ -40,7 +40,7 @@ function validateLastName(){
     var expRegNamePerson = /^[a-zA-ZÑñÁáÉéÍíÓóÚúÜü\s]+$/;
     var PersonName = document.getElementById("lastName");
     if (!expRegNamePerson.exec(PersonName.value)) {
-        alert("Solo se aceptan letras");
+        alert("El apellido solo admite letras");
         document.getElementById("lastName").value="";
         return false;
 

@@ -3,7 +3,7 @@ function validateAffair(){                // Para validar el campo asunto
   var expRegAffair= /^[a-zA-ZÑñÁáÉéÍíÓóÚúÜü\s]+$/;
   var affair= document.getElementById("affair");
   if(!expRegAffair.exec(affair.value)){
-    alert("Se recibe solo letras");
+    alert("El asunto solo puede recibir letras");
     document.getElementById("affair").value=""; // limpia el campo en caso se ingrese números
   }
 }
@@ -11,8 +11,9 @@ function validateAffair(){                // Para validar el campo asunto
 function validateName() {
     var expRegName = /^[a-zA-ZÑñÁáÉéÍíÓóÚúÜü\s]+$/;
     var productName = document.getElementById("name");
-    if (!expRegName.exec(productName.value)) {
-        alert("Se recibe solo letras");
+    if (!expRegName.exec(productName.value)) 
+    {
+        alert("El nombre no puede contener números");
         document.getElementById("name").value = ""; // limpia el campo en caso se ingrese números
        
     } 
@@ -22,7 +23,7 @@ function validateLastName() {
     var expRegLastName = /^[a-zA-ZÑñÁáÉéÍíÓóÚúÜü\s]+$/;
     var lastName = document.getElementById("lastName");
     if (!expRegLastName.exec(lastName.value)) {
-        alert("Se recibe solo letras");
+        alert("El apellido solo puede contener letras");
         document.getElementById("lastName").value = ""; // limpia el campo en caso se ingrese números
        
     } 
@@ -32,7 +33,7 @@ function validateNameClient(){
     var expRegNameClient = /^[a-zA-ZÑñÁáÉéÍíÓóÚúÜü\s]+$/;
     var nameClient= document.getElementById("nameClient");
     if(!expRegNameClient.exec(nameClient.value)){
-        alert("Se recibe solo letras");
+        alert("El nombre del cliente solo puede contener letras");
         document.getElementById("nameClient").value=""; // limpia el campo en caso se ingrese números
     }
 }
@@ -41,7 +42,7 @@ function validateMessage(){
     var expRegMessage=/^[A-Za-z0-9\s]+$/;
     var message= document.getElementById("message");
     if (!expRegMessage.exec(message.value)){
-        alert("Se recibe solo letras y números");
+        alert("El mensaje solo puede recibir letras y números");
         document.getElementById("message").value=""; // limpia el campo en caso no se ingrese letras o números
     
     }
