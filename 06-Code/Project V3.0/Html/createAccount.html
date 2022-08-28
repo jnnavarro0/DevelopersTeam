@@ -101,16 +101,16 @@
             <div class="form-rows">
 
                 Usuario:<br /><input class="controls" type="text" name="userGerister" id="userGerister"
-                    placeholder="Ingrese su Nombre" onblur="return validateUser()">
+                    placeholder="Ingrese su Nombre" onchange="return validateUser()">
 
                 <br />Cédula:<br /><input class="controls" type="text" name="id" id="id" placeholder="Ingrese su Cédula"
                     onblur="return validateid()">
 
                 <br />Nombre:<br /><input class="controls" type="text" name="nameR" id="nameR"
-                    placeholder="Ingrese su Nombre" onblur="return validateNamePerson()">
+                    placeholder="Ingrese su Nombre" onchange="return validateNamePerson()">
 
                 <br />Dirección:<br /><textarea class="controls" type="text" name="address" id="address"
-                    placeholder="Ingrese su Dirección" onblur="return validateDirection()"></textarea>
+                    placeholder="Ingrese su Dirección" onchange="return validateDirection()"></textarea>
 
                 <br />Genero: <br /><label>
                     <input type="radio" name="gender" value="opción" id="Mujer">
@@ -124,19 +124,19 @@
             </div>
             <div class="form-rows">
                 <br />Fecha de Nacimiento: <br /><input class="controls" type="date" name="datePerson" id="datePerson"
-                    onblur="return validateDatePerson()" min="1897-01-01" max="2022-01-01">
+                onchange="return validateDatePerson()" min="1897-01-01" max="2022-01-01">
 
                 <br />Apellido: <br /><input class="controls" type="text" name="lastName" id="lastName"
-                    placeholder="Ingrese su Apellido" onblur="return validateLastName()">
+                    placeholder="Ingrese su Apellido" onchange="return validateLastName()">
 
                 <br />Correo electrónico: <br /><input class="controls" type="email" name="email" id="email"
                     placeholder="Ingrese su correo electronico">
 
                 <br />Contraseña: <br /><input class="controls" type="password" name="password" id="password"
-                    placeholder="Ingrese su contraseña " onBlur="return validateNamePassword() ">
+                    placeholder="Ingrese su contraseña " onchange="return validateNamePassword() ">
 
                 <br />Confirmar contraseña: <br /><input class="controls" type="password" name="password" id="password"
-                    placeholder="Ingrese de nuevo su contraseña " onBlur="return validateNamePassword() ">
+                    placeholder="Ingrese de nuevo su contraseña " onchange="return validateNamePassword() ">
 
             </div>
         </div>

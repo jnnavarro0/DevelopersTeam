@@ -19,11 +19,11 @@ var users = [
 
 function validateUser() {
     var user = document.getElementById("userGerister").value
-    for(i = 0; i < users.length; i++){
-        if(user == users[i].username) {
+    for (i = 0; i < users.length; i++) {
+        if (user == users[i].username) {
             window.alert("El usuario " + user + " ya existe");
+            document.getElementById("userGerister").value = "";
             return false;
         }
     }
-    document.getElementById("userGerister").value="";
 }

@@ -3,7 +3,7 @@ function validateid() {
     var Personid = document.getElementById("id");
     if (!expRegid.exec(Personid.value)) {
         alert("La cedula ingresada es incorrecta");
-        document.getElementById("id").value="";
+        document.getElementById("id").value = "";
         return false;
 
     } else {
@@ -16,7 +16,7 @@ function validateNamePerson() {
     var PersonName = document.getElementById("nameR");
     if (!expRegNamePerson.exec(PersonName.value)) {
         alert("El nombre solo permite letras");
-        document.getElementById("nameR").value="";
+        document.getElementById("nameR").value = "";
         return false;
 
     } else {
@@ -28,7 +28,7 @@ function validateDirection() {
     var PersonDirection = document.getElementById("address");
     if (!expRegDirection.exec(PersonDirection.value)) {
         alert("La dirección no admite caracteres especiales");
-        document.getElementById("address").value="";
+        document.getElementById("address").value = "";
         return false;
 
     } else {
@@ -36,12 +36,14 @@ function validateDirection() {
     }
 }
 
-function validateLastName(){
+
+
+function validateLastName() {
     var expRegNamePerson = /^[a-zA-ZÑñÁáÉéÍíÓóÚúÜü\s]+$/;
     var PersonName = document.getElementById("lastName");
     if (!expRegNamePerson.exec(PersonName.value)) {
         alert("El apellido solo admite letras");
-        document.getElementById("lastName").value="";
+        document.getElementById("lastName").value = "";
         return false;
 
     } else {
@@ -54,7 +56,7 @@ function validateNamePassword() {
     var PersonPassword = document.getElementById("password");
     if (!expRegPassword.exec(PersonPassword.value)) {
         alert("La contraseña debe de tener de 6 a 12 dígitos");
-        document.getElementById("password").value="";
+        document.getElementById("password").value = "";
         return false;
 
     } else {
