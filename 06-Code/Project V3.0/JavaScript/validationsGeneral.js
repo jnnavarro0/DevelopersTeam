@@ -13,8 +13,19 @@ function validateName() {
     var productName = document.getElementById("name");
     if (!expRegName.exec(productName.value)) 
     {
-        alert("El nombre no puede contener números");
+        alert("El nombre solo puede recibir letras");
         document.getElementById("name").value = ""; // limpia el campo en caso se ingrese números
+       
+    } 
+}
+
+function validatenameProduct() {
+    var expRegnameProduct = /^[a-zA-ZÑñÁáÉéÍíÓóÚúÜü\s]+$/;
+    var productnameProduct = document.getElementById("nameProduct");
+    if (!expRegnameProduct.exec(productnameProduct.value)) 
+    {
+        alert("El nombre del producto solo puede recibir letras");
+        document.getElementById("nameProduct").value = ""; // limpia el campo en caso se ingrese números
        
     } 
 }

@@ -10,6 +10,7 @@
     <link href="../Styles/styleForm.css" rel="stylesheet" type="text/css">
     <script src="../JavaScript/javaScript.js"> </script>
     <script src="../JavaScript/validationCreateAccount.js"></script>
+    <script src="../JavaScript/register.js"></script>
     <link rel="icon" href="../img/icono.png">
 </head>
 
@@ -31,10 +32,10 @@
                 <li><a href="../Html/contactos.html">CONTACTOS</a></li>
                 <li><a href="#">CLIENTE</a>
                     <ul class="submenu">
-                          <li><a href="../Html/servicioCliente.html">Servicio al cliente</a></li>
-                          <li><a href="../Html/productosASugerir.html">Productos a sugerir</a></li>
+                        <li><a href="../Html/servicioCliente.html">Servicio al cliente</a></li>
+                        <li><a href="../Html/productosASugerir.html">Productos a sugerir</a></li>
                     </ul>
-              </li>
+                </li>
                 <li><a href="../Html/login.html">INGRESAR</a></li>
             </ul>
         </nav>
@@ -83,7 +84,8 @@
 
             ¿Tiene alguna sugerencia para mejorar el sitio web?
             <div class="text-suggestion">
-                <textarea name="suggestion" id="suggestion" cols="38" rows="5" placeholder="Escriba aquí" onchange="return validateSuggestion()"></textarea>
+                <textarea name="suggestion" id="suggestion" cols="38" rows="5" placeholder="Escriba aquí"
+                    onchange="return validateSuggestion()"></textarea>
             </div>
             <div class="button-save">
                 <button type="submit">Enviar</button>
@@ -97,37 +99,44 @@
     <form class="containerF">
         <div class="form-register">
             <div class="form-rows">
-                Cédula:<br /><input class="controls" type="text" name="id" id="id" placeholder="Ingrese su Cédula"
-                    onblur="return validateid()" >
+
+                Usuario:<br /><input class="controls" type="text" name="userGerister" id="userGerister"
+                    placeholder="Ingrese su Nombre" onblur="return validateUser()">
+
+                <br />Cédula:<br /><input class="controls" type="text" name="id" id="id" placeholder="Ingrese su Cédula"
+                    onblur="return validateid()">
 
                 <br />Nombre:<br /><input class="controls" type="text" name="nameR" id="nameR"
-                    placeholder="Ingrese su Nombre" onblur="return validateNamePerson()" >
+                    placeholder="Ingrese su Nombre" onblur="return validateNamePerson()">
 
                 <br />Dirección:<br /><textarea class="controls" type="text" name="address" id="address"
                     placeholder="Ingrese su Dirección" onblur="return validateDirection()"></textarea>
 
                 <br />Genero: <br /><label>
-                    <input type="radio" name="gender" value="opción" id="Mujer" >
+                    <input type="radio" name="gender" value="opción" id="Mujer">
 
                     Mujer</label>
                 <label>
-                    <input type="radio" name="gender" value="opción" id="Hombre" >
+                    <input type="radio" name="gender" value="opción" id="Hombre">
                     Hombre</label></td>
                 <br />
 
             </div>
             <div class="form-rows">
                 <br />Fecha de Nacimiento: <br /><input class="controls" type="date" name="datePerson" id="datePerson"
-                    onblur="return validateDatePerson()" min="1897-01-01" max="2022-01-01" >
+                    onblur="return validateDatePerson()" min="1897-01-01" max="2022-01-01">
 
                 <br />Apellido: <br /><input class="controls" type="text" name="lastName" id="lastName"
                     placeholder="Ingrese su Apellido" onblur="return validateLastName()">
 
                 <br />Correo electrónico: <br /><input class="controls" type="email" name="email" id="email"
-                    placeholder="Ingrese su correo electronico" >
+                    placeholder="Ingrese su correo electronico">
 
                 <br />Contraseña: <br /><input class="controls" type="password" name="password" id="password"
-                    placeholder="Ingrese su contraseña "onBlur="return validateNamePassword() " ()>
+                    placeholder="Ingrese su contraseña " onBlur="return validateNamePassword() ">
+
+                <br />Confirmar contraseña: <br /><input class="controls" type="password" name="password" id="password"
+                    placeholder="Ingrese de nuevo su contraseña " onBlur="return validateNamePassword() ">
 
             </div>
         </div>
