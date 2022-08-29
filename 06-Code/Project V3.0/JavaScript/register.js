@@ -28,15 +28,15 @@ function validateUser() {
     }
 }
 
+
 function validatePassword() {
     var password = document.getElementById("password").value
     var validatepassword = document.getElementById("validatepassword").value
 
-    if(password == validatepassword)
-    {
+    if (password == validatepassword) {
         return true;
     }
-    else{
+    else {
         window.alert("La contraseña no coincide");
         document.getElementById("password").value = "";
         document.getElementById("validatepassword").value = "";
